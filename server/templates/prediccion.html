@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediccion</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
+
+</head>
+<body>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='img/logo1.png') }}" alt="logo1">
+    </div>
+    {{resultado}}
+    
+    
+    <h1>Churn Analisis</h1>
+
+    
+        <img src="{{ url_for('static', filename='img/churn_distribution.png') }}" alt="Churn Distribution">
+
+        <img src="{{ url_for('static', filename='img/monthly_charges_histogram.png') }}" alt="MonthlyCharges Histogram">
+        
+        <img src="{{ url_for('static', filename='img/correlation_heatmap.png') }}" alt="Correlation Heatmap">
+        
+        <img src="{{ url_for('static', filename='img/gender_churn_contingency_table.png') }}" alt="Gender Churn Contingency Table">
+        
+        <img src="{{ url_for('static', filename='img/subplots1.png') }}" alt="Subplots 1">
+        
+        <img src="{{ url_for('static', filename='img/subplots2.png') }}" alt="Subplots 2">
+        
+</body>
+</html>

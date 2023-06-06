@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Churn Analysis</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
+
+</head>
+<body>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='img/logo1.png') }}" alt="logo1">
+    </div>
+    <h1>Realizar Predicción</h1>
+    
+    
+    <form method="POST" action="/">
+        <label for="customerID">Customer ID:</label>
+        <input type="text" name="customerID" id="customerID" required><br>
+
+        <label for="gender">Gender:</label>
+        <input type="text" name="gender" id="gender" required><br>
+
+        <label for="SeniorCitizen">Senior Citizen:</label>
+        <input type="number" name="SeniorCitizen" id="SeniorCitizen" required><br>
+
+        <label for="Partner">Partner:</label>
+        <input type="text" name="Partner" id="Partner" required><br>
+
+        <label for="Dependents">Dependents:</label>
+        <input type="text" name="Dependents" id="Dependents" required><br>
+
+        <label for="tenure">Tenure:</label>
+        <input type="number" name="tenure" id="tenure" required><br>
+
+        <label for="PhoneService">Phone Service:</label>
+        <input type="text" name="PhoneService" id="PhoneService" required><br>
+
+        <label for="MultipleLines">Multiple Lines:</label>
+        <input type="text" name="MultipleLines" id="MultipleLines" required><br>
+
+        <label for="InternetService">Internet Service:</label>
+        <input type="text" name="InternetService" id="InternetService" required><br>
+
+        <label for="OnlineSecurity">Online Security:</label>
+        <input type="text" name="OnlineSecurity" id="OnlineSecurity" required><br>
+
+        <label for="OnlineBackup">Online Backup:</label>
+        <input type="text" name="OnlineBackup" id="OnlineBackup" required><br>
+
+        <label for="DeviceProtection">Device Protection:</label>
+        <input type="text" name="DeviceProtection" id="DeviceProtection" required><br>
+
+        <label for="TechSupport">Tech Support:</label>
+        <input type="text" name="TechSupport" id="TechSupport" required><br>
+
+        <label for="StreamingTV">Streaming TV:</label>
+        <input type="text" name="StreamingTV" id="StreamingTV" required><br>
+
+        <label for="StreamingMovies">Streaming Movies:</label>
+        <input type="text" name="StreamingMovies" id="StreamingMovies" required><br>
+
+        <label for="Contract">Contract:</label>
+        <input type="text" name="Contract" id="Contract" required><br>
+
+        <label for="PaperlessBilling">Paperless Billing:</label>
+        <input type="text" name="PaperlessBilling" id="PaperlessBilling" required><br>
+
+        <label for="PaymentMethod">Payment Method:</label>
+        <input type="text" name="PaymentMethod" id="PaymentMethod" required><br>
+
+        <label for="MonthlyCharges">Monthly Charges:</label>
+        <input type="number" name="MonthlyCharges" id="MonthlyCharges" required><br>
+
+        <label for="TotalCharges">Total Charges:</label>
+        <input type="number" name="TotalCharges" id="TotalCharges" required><br>
+        
+        <label for="Churn">Churn</label>
+        <input type="text" name="Churn" id="Churn" required><br>
+
+        <input type="submit" value="Realizar Predicción">
+    </form>
+</body>
+</html>
